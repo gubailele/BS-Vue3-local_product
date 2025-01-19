@@ -12,9 +12,10 @@
             <li class="home">
             <RouterLink to="/">首页</RouterLink>
             </li>
-            <li> <RouterLink to="/">居家</RouterLink> </li>
-            <li> <RouterLink to="/">美食</RouterLink> </li>
-            <li> <RouterLink to="/">服饰</RouterLink> </li>
+            <li> <RouterLink to="/">特色食品</RouterLink> </li>
+            <li> <RouterLink to="/">手工艺品</RouterLink> </li>
+            <li> <RouterLink to="/">民族服饰</RouterLink> </li>
+            <li> <RouterLink to="/">特色家居</RouterLink></li>
         </ul>
         <div class="search">
             <i class="iconfont icon-search"></i>
@@ -57,12 +58,12 @@
     
         li {
         margin-right: 40px;
-        width: 38px;
+        width: 70px;
         text-align: center;
     
         a {
             font-size: 16px;
-            line-height: 32px;
+            //line-height: 32px;
             height: 32px;
             display: inline-block;
     

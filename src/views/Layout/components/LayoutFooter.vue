@@ -14,12 +14,12 @@
             <dd><i class="iconfont icon-weibo"></i> 微博</dd>
           </dl>
           <dl>
-            <dt>下载APP</dt>
+            <dt>问卷调查</dt>
             <dd class="qrcode"><img src="@/assets/images/qrcode.jpg" /></dd>
             <dd class="download">
               <span>扫描二维码</span>
-              <span>立马下载APP</span>
-              <a href="javascript:;">下载页面</a>
+              <span>填写问卷调查</span>
+              <a href="https://www.wjx.cn/vm/mOwHbTU.aspx# ">填写问卷</a>
             </dd>
           </dl>
           <dl>
@@ -170,7 +170,7 @@
     }
   
     .extra {
-      background-color: #333;
+      background-color: black;
     }
   
     .slogan {
