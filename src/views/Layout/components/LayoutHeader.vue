@@ -1,4 +1,17 @@
 <script setup>
+import { getAllCategoriesAPI } from '@/apis/layoutAPI';
+import { onMounted, ref } from 'vue';
+
+const categoryList = ref([])
+const getAllCategories = async ()=>{
+    const res = await getAllCategoriesAPI()
+    console.log(res)
+    categoryList.value = res;
+}
+
+onMounted(() =>{
+    getAllCategories()
+})
 
 </script>
 
@@ -9,13 +22,9 @@
             <RouterLink to="/">小兔鲜</RouterLink>
         </h1>
         <ul class="app-header-nav">
-            <li class="home">
-            <RouterLink to="/">首页</RouterLink>
+            <li class="home" v-for="category in categoryList" :key="category.categoryId">
+            <RouterLink to="/">{{ category.categoryName }}</RouterLink>
             </li>
-            <li> <RouterLink to="/">特色食品</RouterLink> </li>
-            <li> <RouterLink to="/">手工艺品</RouterLink> </li>
-            <li> <RouterLink to="/">民族服饰</RouterLink> </li>
-            <li> <RouterLink to="/">特色家居</RouterLink></li>
         </ul>
         <div class="search">
             <i class="iconfont icon-search"></i>
